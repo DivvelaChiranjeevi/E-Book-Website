@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetBook</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+    form{
+        display: flex;
+    flex-direction: column;
+    margin: 2% 15%;
+    padding: 5%;
+    justify-content: space-around;
+    background-color: rgb(14 35 242 / 82%);
+    animation-name: pop;
+    animation-duration: 0.5s;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    }
+    form #submit {
+    background-color: yellow;
+    margin: 0 30%;
+    cursor: pointer;
+    border-radius: 70%;
+    overflow: hidden;
+}
+form #submit:hover{
+    border-radius: 0;
+    box-shadow: 10px 5px 5px black;
+}
+#navorder{
+    color: rgb(14 35 242 / 82%);
+}
+</style>
+</head>
+<body>
+    <nav>
+        <!-- <img id="logo" src="./images/ebook-store-logo.jpg" alt="" srcset=""> -->
+        <h3><a id="title" href="../index.html">Home</a></h3>
+        <h3><a href="#" id="navorder">Order</a></h3>
+        <h3><a href="./orders.html">Previous Orders</a></h3>
+        <h3><a href="./about.html">About</a></h3>
+    </nav>
+    <form method="POST" action="Byfood.php">
+        <input type="text" name="email" id="email" placeholder="Enter Your email address" autocomplete="off">
+        <input type="text" name="address" id="address" placeholder="Enter Your address" autocomplete="off">
+        <select name="bookName" id="bookName">
+            <option value="">---- select your book----</option>            
+            <option value="Python For DataScience">Python For DataScience</option>
+            <option value="An Indian Economy">An Indian Economy</option>
+            <option value="Consumer Behaviour">Consumer Behaviour</option>
+            <option value="General Knowledge 2017">General Knowledge 2017</option>
+            <option value="General Studies 2016(paper1)">General Studies 2016(paper1)</option>
+            <option value="The Year Mega Book">The Year Mega Book</option>
+            <option value="Wings of Fire">Wings of Fire</option>
+            <option value="The Z Factor">The Z Factor</option>
+            <option value="Pranab Mukherjee">Pranab Mukherjee</option>
+            <option value="M.K.Gandhi">M.K.Gandhi</option>
+            <option value="Steve jobs">Steve jobs</option>
+            <option value="The Girl in the Spider's Web">The Girl in the Spider's Web</option>
+            <option value="LOL">LOL</option>
+            <option value="Kane And Abel">Kane And Abel</option>
+        </select>
+        <input type="submit" id="submit" value="Order Book">
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>
